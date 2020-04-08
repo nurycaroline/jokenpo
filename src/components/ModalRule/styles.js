@@ -44,7 +44,7 @@ export const Title = styled.h2`
 `;
 
 export const ImageRule = styled.img`
-  margin: 113px auto 0 auto;
+  margin: 20% auto 0 auto;
   display: block;
 `;
 

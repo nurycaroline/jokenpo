@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 import IRuleBasic from "../../assets/images/image-rules.svg";
 import IClose from "../../assets/images/icon-close.svg";
 
 import { ButtonRule, Modal, Title, ImageRule, ButtonClose } from "./styles";
 
-export default function ModalRule({ onClose }) {
+export default function ModalRule({ type }) {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
@@ -23,3 +24,7 @@ export default function ModalRule({ onClose }) {
     </>
   );
 }
+
+ModalRule.propTypes = {
+  type: PropTypes.oneOf(["basic"]),
+};

@@ -23,7 +23,7 @@ export const Logo = styled.img`
 
 export const Score = styled.div`
   background: ${grayGradient};
-  box-shadow: 0px 3px 3px ${grayShadow};
+  box-shadow: ${grayShadow};
   border-radius: 4px;
   width: 80px;
   height: 72px;
