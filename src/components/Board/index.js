@@ -3,17 +3,21 @@ import Option from "../Option";
 
 import ITriangle from "../../assets/images/bg-triangle.svg";
 
-import { Board, Options, BackgroundLine } from "./styles";
+import { Board, OptionsBasic, BackgroundLineBasic } from "./styles";
 
 export default function BoardComponent({ type }) {
   return (
     <Board type={type} background={ITriangle}>
-      <BackgroundLine src={ITriangle} alt={`Background ${type}`} />
-      <Options type={type}>
-        <Option type="paper" />
-        <Option type="scissor" />
-        <Option type="rock" />
-      </Options>
+      {type === "basic" && (
+        <>
+          <BackgroundLineBasic src={ITriangle} alt={`Background ${type}`} />
+          <OptionsBasic type={type}>
+            <Option type="paper" />
+            <Option type="scissor" />
+            <Option type="rock" />
+          </OptionsBasic>
+        </>
+      )}
     </Board>
   );
 }

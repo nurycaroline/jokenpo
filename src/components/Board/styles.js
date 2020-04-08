@@ -11,7 +11,7 @@ export const Board = styled.div`
   `}
 `;
 
-export const BackgroundLine = styled.img`
+export const BackgroundLineBasic = styled.img`
   margin: 65px auto 0 auto;
   position: absolute;
   left: 0;
@@ -25,7 +25,7 @@ export const BackgroundLine = styled.img`
   `}
 `;
 
-export const Options = styled.div`
+export const OptionsBasic = styled.div`
   position: absolute;
   display: flex;
   align-items: center;
