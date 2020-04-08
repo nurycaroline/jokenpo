@@ -1,9 +1,14 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 
 export const Board = styled.div`
   max-width: 320px;
   height: 280px;
-  margin-top: 20%;
+  margin-top: 30%;
+
+  ${media.greaterThan("small")`
+    margin-top: 10%;
+  `}
 `;
 
 export const BackgroundLine = styled.img`
@@ -13,6 +18,11 @@ export const BackgroundLine = styled.img`
   right: 0;
   width: 166px;
   height: 188px;
+
+  ${media.greaterThan("small")`
+    width: 254px;
+    height: 287px;
+  `}
 `;
 
 export const Options = styled.div`
@@ -25,4 +35,8 @@ export const Options = styled.div`
   right: 0;
   max-width: 320px;
   margin: auto;
+
+  ${media.greaterThan("small")`
+    max-width: 476px;
+  `}
 `;

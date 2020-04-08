@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 import {
   gray,
   grayDark,
@@ -14,11 +15,24 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  ${media.greaterThan("small")`
+    max-width: 700px;
+    height: 150px;
+    margin: auto;
+    border-radius: 8px;
+  `}
 `;
 
 export const Logo = styled.img`
+  width: 83px;
   height: 48px;
   margin-left: 23px;
+
+  ${media.greaterThan("small")`
+    width: 159px;
+    height: 96px;
+  `}
 `;
 
 export const Score = styled.div`
@@ -48,4 +62,20 @@ export const Score = styled.div`
     line-height: 40px;
     color: ${grayDark};
   }
+
+  ${media.greaterThan("small")`
+    width: 150px;
+    height: 114px;
+    border-radius: 8px;
+
+    p:nth-child(1){
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2.5px;
+    }
+    p:nth-child(2){
+      font-size: 64px;
+      line-height: 64px;
+    }
+  `}
 `;

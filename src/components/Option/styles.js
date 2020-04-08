@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 import {
   grayDark2,
   grayGradient2,
   grayGradient3,
   grayShadow,
+  grayShadowLight,
 } from "../../layout/colors";
 
 export const Option = styled.div`
@@ -16,6 +18,16 @@ export const Option = styled.div`
 
   width: 129.37px;
   height: 132.66px;
+
+  ${media.greaterThan("small")`
+    width: 198px;
+    height: 203px;
+
+    &:hover {
+      box-shadow: ${grayShadowLight};
+      mix-blend-mode: normal;
+    }
+  `}
 `;
 
 export const OvalBackground = styled.div`
@@ -25,6 +37,11 @@ export const OvalBackground = styled.div`
 
   width: 129.37px;
   height: 126.78px;
+
+  ${media.greaterThan("small")`
+    width: 198px;
+    height: 194px;
+  `}
 `;
 
 export const OvalGradient = styled.div`
@@ -35,6 +52,12 @@ export const OvalGradient = styled.div`
 
   width: 129.37px;
   height: 126.78px;
+
+  ${media.greaterThan("small")`
+    width: 198px;
+    height: 194px;
+    padding-top: 25px;
+  `}
 `;
 
 export const OvalInsideBackground = styled.div`
@@ -45,6 +68,11 @@ export const OvalInsideBackground = styled.div`
 
   width: 99.31px;
   height: 99.33px;
+
+  ${media.greaterThan("small")`
+    width: 152px;
+    height: 152px;
+  `}
 `;
 
 export const OvalInsideGradient = styled.div`
@@ -55,10 +83,20 @@ export const OvalInsideGradient = styled.div`
 
   width: 99.31px;
   height: 94.1px;
+
+  ${media.greaterThan("small")`
+    width: 152px;
+    height: 144px;
+  `}
 `;
 
 export const Image = styled.img`
   margin: auto;
-  max-width: 48px;
-  max-height: 56px;
+  width: 48px;
+  height: 56px;
+
+  ${media.greaterThan("small")`
+    width: 67.21px;
+    height: 80px;
+  `}
 `;
