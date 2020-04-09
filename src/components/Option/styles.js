@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import media from "styled-media-query";
 import {
   grayDark2,
@@ -7,6 +7,18 @@ import {
   grayShadow,
   grayShadowLight,
 } from "../../layout/colors";
+
+export const OptionEmpty = styled.div`
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  width: 110px;
+  height: 110px;
+
+  ${media.greaterThan("small")`
+    width: 224.63px;
+    height: 224.63px;
+  `}
+`;
 
 export const Option = styled.div`
   width: 130px;
@@ -20,6 +32,15 @@ export const Option = styled.div`
   height: 132.66px;
 
   ${media.greaterThan("small")`
+
+  ${(props) =>
+    props.selected &&
+    css`
+      transform: scale(1.48);
+      width: 293.04px;
+      height: 300.44px;
+    `}
+    
     width: 198px;
     height: 203px;
 

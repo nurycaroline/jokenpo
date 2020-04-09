@@ -6,6 +6,7 @@ import IRock from "../../assets/images/icon-rock.svg";
 import IScissor from "../../assets/images/icon-scissors.svg";
 
 import {
+  OptionEmpty,
   Option,
   OvalGradient,
   OvalBackground,
@@ -32,10 +33,10 @@ const TYPES = {
   },
 };
 
-export default function OptionComponent({ type }) {
-  const { icon, colorShadow, colorBackground } = TYPES[type];
-  return (
-    <Option color={colorShadow}>
+export default function OptionComponent({ type, selected }) {
+  const { icon, colorShadow, colorBackground } = type ? TYPES[type] : {};
+  return type ? (
+    <Option color={colorShadow} selected={selected}>
       <OvalBackground color={colorBackground}>
         <OvalGradient>
           <OvalInsideBackground>
@@ -46,9 +47,12 @@ export default function OptionComponent({ type }) {
         </OvalGradient>
       </OvalBackground>
     </Option>
+  ) : (
+    <OptionEmpty />
   );
 }
 
 OptionComponent.propTypes = {
-  type: PropTypes.oneOf(["paper", "scissor", "rock"]),
+  type: PropTypes.oneOf(["", "paper", "scissor", "rock"]),
+  selected: PropTypes.bool,
 };
