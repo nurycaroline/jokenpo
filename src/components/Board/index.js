@@ -52,11 +52,11 @@ export default function BoardComponent({ type }) {
       {youPicked && (
         <Choices>
           <Choice>
-            <Option type={youPicked} selected />
+            <Option type={youPicked} win={winner === "playOne"} selected />
             <Label>YOU PICKED</Label>
           </Choice>
           <Choice>
-            <Option type={housePicked} selected />
+            <Option type={housePicked} win={winner === "playTwo"} selected />
             <Label>THE HOUSE PICKED</Label>
           </Choice>
         </Choices>
