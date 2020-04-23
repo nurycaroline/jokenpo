@@ -21,7 +21,9 @@ export default function ModalRule({ type }) {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
-      <ButtonRule onClick={() => setShowModal(true)}>RULES</ButtonRule>
+      <ButtonRule styled="primary" onClick={() => setShowModal(true)}>
+        RULES
+      </ButtonRule>
       {showModal && (
         <>
           <Background />

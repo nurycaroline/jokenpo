@@ -4,26 +4,14 @@ import media from "styled-media-query";
 import {
   white,
   blueDark,
-  grayGradient,
   grayShadow,
   blackRadial,
 } from "../../layout/colors";
+import ButtonComponent from "../Button";
 
-export const ButtonRule = styled.button`
+export const ButtonRule = styled(ButtonComponent)`
   width: 128px;
   height: 40px;
-  border: 1px solid ${white};
-  border-radius: 8px;
-  color: ${white};
-  background: none;
-
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 2.5px;
-
-  outline: none;
 
   position: absolute;
   bottom: 56px;
@@ -32,12 +20,7 @@ export const ButtonRule = styled.button`
   right: 0;
   display: block;
 
-  &:hover {
-    background: ${grayGradient};
-    color: ${blueDark};
-  }
-
-  ${media.greaterThan("small")`
+  ${media.greaterThan("1024px")`
     left: unset;
     right: 32px;
     bottom: 32px;
@@ -52,7 +35,7 @@ export const Modal = styled.div`
   width: 100vw;
   height: 100vh;
 
-  ${media.greaterThan("small")`
+  ${media.greaterThan("1024px")`
     width: 400px;
     height: 415px;
     margin: auto;
@@ -71,7 +54,7 @@ export const Title = styled.h2`
   text-align: center;
   margin-top: 20%;
 
-  ${media.greaterThan("small")`
+  ${media.greaterThan("1024px")`
     margin: 32px;
     text-align: left;
   `}
@@ -81,7 +64,7 @@ export const ImageRule = styled.img`
   margin: 20% auto 0 auto;
   display: block;
 
-  ${media.greaterThan("small")`
+  ${media.greaterThan("1024px")`
     margin-top: 16px;
   `}
 `;
@@ -94,8 +77,9 @@ export const ButtonClose = styled.button`
   left: 0;
   right: 0;
   display: block;
+  background: none;
 
-  ${media.greaterThan("small")`
+  ${media.greaterThan("1024px")`
     bottom: unset;
     left: unset;
     top: 38px;
@@ -109,5 +93,6 @@ export const Background = styled.div`
   height: 100vh;
   position: absolute;
   top: 0;
+  left: 0;
   opacity: 0.9;
 `;

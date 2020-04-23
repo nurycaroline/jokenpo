@@ -16,7 +16,7 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
 
-  ${media.greaterThan("small")`
+  ${media.greaterThan("1024px")`
     max-width: 700px;
     height: 150px;
     margin: auto;
@@ -29,7 +29,7 @@ export const Logo = styled.img`
   height: 48px;
   margin-left: 23px;
 
-  ${media.greaterThan("small")`
+  ${media.greaterThan("1024px")`
     width: 159px;
     height: 96px;
   `}
@@ -63,7 +63,7 @@ export const Score = styled.div`
     color: ${grayDark};
   }
 
-  ${media.greaterThan("small")`
+  ${media.greaterThan("1024px")`
     width: 150px;
     height: 114px;
     border-radius: 8px;

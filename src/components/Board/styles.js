@@ -5,10 +5,12 @@ import { white } from "../../layout/colors";
 export const Board = styled.div`
   max-width: 320px;
   height: 280px;
-  margin-top: 30%;
+  margin-top: 10%;
 
-  ${media.greaterThan("small")`
-    margin-top: 10%;
+  ${media.greaterThan("1024px")`
+    margin-top: 70px;
+    max-width: initial;
+    height: 410px;
   `}
 `;
 
@@ -20,7 +22,7 @@ export const BackgroundLineBasic = styled.img`
   width: 166px;
   height: 188px;
 
-  ${media.greaterThan("small")`
+  ${media.greaterThan("1024px")`
     width: 254px;
     height: 287px;
   `}
@@ -37,7 +39,7 @@ export const OptionsBasic = styled.div`
   max-width: 320px;
   margin: auto;
 
-  ${media.greaterThan("small")`
+  ${media.greaterThan("1024px")`
     max-width: 476px;
   `}
 `;
@@ -53,10 +55,10 @@ export const Choices = styled.div`
   max-width: 324px;
   height: 182px;
 
-  ${media.greaterThan("small")`
-    width: 100%;
+  ${media.greaterThan("1024px")`
+    width: 90%;
     height: auto;
-    max-width: 658px;
+    max-width: initial;
   `}
 `;
 
@@ -68,7 +70,7 @@ export const Choice = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  ${media.greaterThan("small")`
+  ${media.greaterThan("1024px")`
     width: 292.61px;
     height: 395px;
     flex-direction: column-reverse;
@@ -83,7 +85,7 @@ export const Label = styled.h2`
   font-size: 15px;
   line-height: 32px;
 
-  ${media.greaterThan("small")`
+  ${media.greaterThan("1024px")`
     font-size: 24px;
   `}
 `;

@@ -14,7 +14,7 @@ export const OptionEmpty = styled.div`
   width: 110px;
   height: 110px;
 
-  ${media.greaterThan("small")`
+  ${media.greaterThan("1024px")`
     width: 224.63px;
     height: 224.63px;
   `}
@@ -31,7 +31,7 @@ export const Option = styled.div`
   width: 129.37px;
   height: 132.66px;
 
-  ${media.greaterThan("small")`
+  ${media.greaterThan("1024px")`
 
   ${(props) =>
     props.selected &&
@@ -59,7 +59,7 @@ export const OvalBackground = styled.div`
   width: 129.37px;
   height: 126.78px;
 
-  ${media.greaterThan("small")`
+  ${media.greaterThan("1024px")`
     width: 198px;
     height: 194px;
   `}
@@ -74,7 +74,7 @@ export const OvalGradient = styled.div`
   width: 129.37px;
   height: 126.78px;
 
-  ${media.greaterThan("small")`
+  ${media.greaterThan("1024px")`
     width: 198px;
     height: 194px;
     padding-top: 25px;
@@ -90,7 +90,7 @@ export const OvalInsideBackground = styled.div`
   width: 99.31px;
   height: 99.33px;
 
-  ${media.greaterThan("small")`
+  ${media.greaterThan("1024px")`
     width: 152px;
     height: 152px;
   `}
@@ -105,7 +105,7 @@ export const OvalInsideGradient = styled.div`
   width: 99.31px;
   height: 94.1px;
 
-  ${media.greaterThan("small")`
+  ${media.greaterThan("1024px")`
     width: 152px;
     height: 144px;
   `}
@@ -116,7 +116,7 @@ export const Image = styled.img`
   width: 48px;
   height: 56px;
 
-  ${media.greaterThan("small")`
+  ${media.greaterThan("1024px")`
     width: 67.21px;
     height: 80px;
   `}

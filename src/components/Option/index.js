@@ -33,10 +33,10 @@ const TYPES = {
   },
 };
 
-export default function OptionComponent({ type, selected }) {
+export default function OptionComponent({ type, selected, onClick }) {
   const { icon, colorShadow, colorBackground } = type ? TYPES[type] : {};
   return type ? (
-    <Option color={colorShadow} selected={selected}>
+    <Option color={colorShadow} selected={selected} onClick={onClick}>
       <OvalBackground color={colorBackground}>
         <OvalGradient>
           <OvalInsideBackground>
