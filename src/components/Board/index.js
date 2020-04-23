@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import useJokenpo from "../../hooks/useJokenpo";
 import Option from "../Option";
 import Result from "../Result";
 
@@ -14,22 +15,25 @@ import {
 } from "./styles";
 
 const VALUES_OPTION = {
-  1: "paper",
-  2: "scissor",
-  3: "rock",
+  0: "paper",
+  1: "scissor",
+  2: "rock",
 };
 
 export default function BoardComponent({ type }) {
   const [youPicked, setYouPicked] = useState("");
-  const [housePicked, sethousePicked] = useState("");
+  const [housePicked, setHousePicked] = useState("");
+  const { winner } = useJokenpo(youPicked, housePicked);
 
   useEffect(() => {
-    sethousePicked(VALUES_OPTION[Math.floor(Math.random() * 3) + 1]);
+    if (youPicked) {
+      setHousePicked(VALUES_OPTION[Math.floor(Math.random() * 3)]);
+    }
   }, [youPicked]);
 
   function handleNewGame() {
     setYouPicked("");
-    sethousePicked("");
+    setHousePicked("");
   }
 
   return (
@@ -59,11 +63,7 @@ export default function BoardComponent({ type }) {
       )}
 
       {youPicked && housePicked && (
-        <Result
-          youPicked={youPicked}
-          housePicked={housePicked}
-          handleNewGame={handleNewGame}
-        />
+        <Result winner={winner} handleNewGame={handleNewGame} />
       )}
     </Board>
   );
