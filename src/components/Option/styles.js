@@ -43,8 +43,6 @@ export const Option = styled.div`
   width: 129.37px;
   height: 132.66px;
 
-  ${(props) => console.log(props.win)}
-
   ${(props) =>
     props.win &&
     css`
