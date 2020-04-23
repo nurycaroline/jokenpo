@@ -1,5 +1,5 @@
 import { renderHook } from "@testing-library/react-hooks";
-import useJokenpo, { OPTIONS_JOKENPO } from "./useJokenpo";
+import useJokenpo from "./useJokenpo";
 
 describe("useJokenpo", () => {
   it("should be paper vs paper = tied", () => {
