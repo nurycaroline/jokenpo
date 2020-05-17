@@ -11,7 +11,6 @@
 <h3 align="center">
   <a href="https://nurielly.dev/jokenpo/">Acessar o game</a>
 </h3>
----
 
 # Indice
 
