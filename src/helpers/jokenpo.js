@@ -4,8 +4,12 @@ const paperWins = ["rock"];
 const scissorWins = ["paper"];
 const rockWins = ["scissor"];
 
-export default function useJokenpo(playOnePicked, playTwoPicked) {
-  let winner = OPTIONS_JOKENPO[0];
+function useJokenpo(playOnePicked, playTwoPicked, callback) {
+  let winner = "";
+
+  if (!playOnePicked || !playTwoPicked) {
+    return { winner: "" };
+  }
 
   if (playOnePicked === playTwoPicked) {
     winner = "tied";
@@ -24,3 +28,5 @@ export default function useJokenpo(playOnePicked, playTwoPicked) {
 
   return { winner };
 }
+
+export default useJokenpo;
