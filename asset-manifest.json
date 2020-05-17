@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.js": "/jokenpo/static/js/main.9a0a7519.chunk.js",
+    "main.js.map": "/jokenpo/static/js/main.9a0a7519.chunk.js.map",
+    "runtime-main.js": "/jokenpo/static/js/runtime-main.e6c6e53d.js",
+    "runtime-main.js.map": "/jokenpo/static/js/runtime-main.e6c6e53d.js.map",
+    "static/js/2.d37ca95b.chunk.js": "/jokenpo/static/js/2.d37ca95b.chunk.js",
+    "static/js/2.d37ca95b.chunk.js.map": "/jokenpo/static/js/2.d37ca95b.chunk.js.map",
+    "index.html": "/jokenpo/index.html",
+    "precache-manifest.67c7754710e2d11afe28f9e9bd6f0fcb.js": "/jokenpo/precache-manifest.67c7754710e2d11afe28f9e9bd6f0fcb.js",
+    "service-worker.js": "/jokenpo/service-worker.js",
+    "static/js/2.d37ca95b.chunk.js.LICENSE.txt": "/jokenpo/static/js/2.d37ca95b.chunk.js.LICENSE.txt",
+    "static/media/bg-triangle.svg": "/jokenpo/static/media/bg-triangle.1fd44bdf.svg",
+    "static/media/icon-close.svg": "/jokenpo/static/media/icon-close.919ab92a.svg",
+    "static/media/icon-paper.svg": "/jokenpo/static/media/icon-paper.69a8c2e9.svg",
+    "static/media/icon-rock.svg": "/jokenpo/static/media/icon-rock.8ce1e109.svg",
+    "static/media/icon-scissors.svg": "/jokenpo/static/media/icon-scissors.bec2f9b3.svg",
+    "static/media/image-rules.svg": "/jokenpo/static/media/image-rules.5d74d25d.svg",
+    "static/media/logo.svg": "/jokenpo/static/media/logo.759a2075.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e6c6e53d.js",
+    "static/js/2.d37ca95b.chunk.js",
+    "static/js/main.9a0a7519.chunk.js"
+  ]
+}
