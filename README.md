@@ -8,10 +8,10 @@
   <img alt="GitHub repo size in bytes" src="https://img.shields.io/github/repo-size/nurycaroline/jokenpo?color=green">
 </p>
 
-<img src="challenge/design/original/mobile-step-1.jpg" />
-
+<h3 align="center">
+  <a href="https://nurielly.dev/jokenpo/">Acessar o game</a>
+</h3>
 ---
-
 
 # Indice
 
@@ -25,6 +25,8 @@
 ## 🎮️ Sobre
 
 O projeto **Jokenpo** foi um desafio criado pelo [Frontend Mentor](https://www.frontendmentor.io?ref=challenge).
+
+<img src="challenge/design/original/mobile-step-1.jpg" />
 
 ---
 
