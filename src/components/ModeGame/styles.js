@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 
 export const Mode = styled.div`
   position: absolute;
@@ -13,4 +14,8 @@ export const Mode = styled.div`
     width: 100px;
     height: 35px;
   }
+
+  ${media.greaterThan('1024px')`
+    padding-right: 240px;
+  `}
 `;
