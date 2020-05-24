@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c320245aba41e4dfe130f1732a3b2d89",
+    "revision": "81565954ae276ec34b9a1d10f1f7495b",
     "url": "/jokenpo/index.html"
   },
   {
-    "revision": "8acc73183e93af54e7de",
-    "url": "/jokenpo/static/js/2.d37ca95b.chunk.js"
+    "revision": "90a8b5c66f82bc3bb12c",
+    "url": "/jokenpo/static/js/2.a8ef54b1.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/jokenpo/static/js/2.d37ca95b.chunk.js.LICENSE.txt"
+    "url": "/jokenpo/static/js/2.a8ef54b1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7be14c382eec5da413e7",
-    "url": "/jokenpo/static/js/main.9a0a7519.chunk.js"
+    "revision": "ee221e115b6cb343b126",
+    "url": "/jokenpo/static/js/main.8a2282ab.chunk.js"
   },
   {
     "revision": "8badfebe54ecf938ad75",
     "url": "/jokenpo/static/js/runtime-main.e6c6e53d.js"
+  },
+  {
+    "revision": "aced70522265bc609155bea44802776b",
+    "url": "/jokenpo/static/media/bg-pentagon.aced7052.svg"
   },
   {
     "revision": "1fd44bdf9274b331fe659004ccc71e63",
@@ -26,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "919ab92a5d671f1b7fdd3e5f97eb816c",
     "url": "/jokenpo/static/media/icon-close.919ab92a.svg"
+  },
+  {
+    "revision": "7d2e0b18d2860b90407f41297dce461f",
+    "url": "/jokenpo/static/media/icon-lizard.7d2e0b18.svg"
   },
   {
     "revision": "69a8c2e96b659b35a3760c79123be610",
@@ -40,8 +48,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jokenpo/static/media/icon-scissors.bec2f9b3.svg"
   },
   {
+    "revision": "b6446e8e1e5d5609deb209d401e779a3",
+    "url": "/jokenpo/static/media/icon-spock.b6446e8e.svg"
+  },
+  {
+    "revision": "f19a40fbc5296effc230454fa1295890",
+    "url": "/jokenpo/static/media/image-rules-bonus.f19a40fb.svg"
+  },
+  {
     "revision": "5d74d25d9c64bde346585ec7e7587a69",
     "url": "/jokenpo/static/media/image-rules.5d74d25d.svg"
+  },
+  {
+    "revision": "f4c973f743c8b75de9da23335e126dcd",
+    "url": "/jokenpo/static/media/logo-bonus.f4c973f7.svg"
   },
   {
     "revision": "759a207509c8dad61b7e365b27e0d0bd",
