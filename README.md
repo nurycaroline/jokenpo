@@ -26,6 +26,7 @@
 O projeto **Jokenpo** foi um desafio criado pelo [Frontend Mentor](https://www.frontendmentor.io?ref=challenge).
 
 <img src="challenge/design/original/mobile-step-1.jpg" />
+<img src="challenge/design/bonus/mobile-step-1-bonus.jpg" />
 
 ---
 
