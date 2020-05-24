@@ -27,11 +27,11 @@ describe("Jokenpo Game", () => {
     const { winner } = jokenpo("scissor", "scissor");
     expect(winner).toEqual("tied");
   });
-  it("should be scissor vs paper = tied", () => {
+  it("should be scissor vs paper = playOne", () => {
     const { winner } = jokenpo("scissor", "paper");
     expect(winner).toEqual("playOne");
   });
-  it("should be scissor vs rock = tied", () => {
+  it("should be scissor vs rock = playTwo", () => {
     const { winner } = jokenpo("scissor", "rock");
     expect(winner).toEqual("playTwo");
   });
@@ -40,12 +40,38 @@ describe("Jokenpo Game", () => {
     const { winner } = jokenpo("rock", "rock");
     expect(winner).toEqual("tied");
   });
-  it("should be rock vs scissor = tied", () => {
+  it("should be rock vs scissor = playOne", () => {
     const { winner } = jokenpo("rock", "scissor");
     expect(winner).toEqual("playOne");
   });
-  it("should be rock vs paper = tied", () => {
+  it("should be rock vs paper = playTwo", () => {
     const { winner } = jokenpo("rock", "paper");
     expect(winner).toEqual("playTwo");
+  });
+
+  it("should be lizard vs lizard = tied", () => {
+    const { winner } = jokenpo("lizard", "lizard");
+    expect(winner).toEqual("tied");
+  });
+  it("should be lizard vs spock = playOne", () => {
+    const { winner } = jokenpo("lizard", "spock");
+    expect(winner).toEqual("playOne");
+  });
+  it("should be lizard vs paper = playOne", () => {
+    const { winner } = jokenpo("lizard", "paper");
+    expect(winner).toEqual("playOne");
+  });
+
+  it("should be spock vs spock = tied", () => {
+    const { winner } = jokenpo("spock", "spock");
+    expect(winner).toEqual("tied");
+  });
+  it("should be spock vs scissor = playOne", () => {
+    const { winner } = jokenpo("spock", "scissor");
+    expect(winner).toEqual("playOne");
+  });
+  it("should be spock vs rock = playOne", () => {
+    const { winner } = jokenpo("spock", "rock");
+    expect(winner).toEqual("playOne");
   });
 });

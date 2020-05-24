@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import IRuleBasic from "../../assets/images/image-rules.svg";
+import IRuleAdvanced from "../../assets/images/image-rules-bonus.svg";
 import IClose from "../../assets/images/icon-close.svg";
 
 import {
@@ -15,6 +16,7 @@ import {
 
 const TYPE_IMAGE = {
   basic: IRuleBasic,
+  advanced: IRuleAdvanced
 };
 
 export default function ModalRule({ type }) {
@@ -42,5 +44,5 @@ export default function ModalRule({ type }) {
 }
 
 ModalRule.propTypes = {
-  type: PropTypes.oneOf(["basic"]),
+  type: PropTypes.oneOf(["basic", "advanced"]),
 };

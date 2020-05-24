@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 import IPaper from "../../assets/images/icon-paper.svg";
 import IRock from "../../assets/images/icon-rock.svg";
 import IScissor from "../../assets/images/icon-scissors.svg";
+import ISpock from "../../assets/images/icon-spock.svg";
+import ILizard from "../../assets/images/icon-lizard.svg";
 
 import {
   OptionEmpty,
@@ -31,6 +33,16 @@ const TYPES = {
     colorShadow: "#9D1634",
     colorBackground: "#DB2E4D",
   },
+  spock: {
+    icon: ISpock,
+    colorShadow: "#2D8DAB",
+    colorBackground: "#3FB7CD",
+  },
+  lizard: {
+    icon: ILizard,
+    colorShadow: "#5F37A8",
+    colorBackground: "#834EE3",
+  },
 };
 
 export default function OptionComponent({ type, win, selected, onClick }) {
@@ -53,6 +65,6 @@ export default function OptionComponent({ type, win, selected, onClick }) {
 }
 
 OptionComponent.propTypes = {
-  type: PropTypes.oneOf(["", "paper", "scissor", "rock"]),
+  type: PropTypes.oneOf(["", "paper", "scissor", "rock", "lizard", "spock"]),
   selected: PropTypes.bool,
 };

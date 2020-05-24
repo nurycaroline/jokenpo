@@ -44,6 +44,79 @@ export const OptionsBasic = styled.div`
   `}
 `;
 
+export const OptionsAdvanced = styled.div`
+  position: absolute;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; */
+  left: 0;
+  right: 0;
+  max-width: 320px;
+  max-height: 305px;
+  margin: auto;
+
+  & > div:nth-child(1) {
+    margin: -20px auto 0 auto;
+  }
+  & > div:nth-child(2) {
+    margin-top: -50px;
+    margin-left: -10px;
+  }
+  & > div:nth-child(3) {
+    float: right;
+    margin-top: -130px;
+    margin-right: -10px;
+  }
+  & > div:nth-child(4) {
+    margin-left: 30px;
+    margin-top: -10px;
+  }
+  & > div:nth-child(5) {
+    float: right;
+    margin-top: -130px;
+    margin-right: 30px;
+  }
+
+  & > div {
+    transform: scale(0.75);
+    width: 130px;
+  }
+
+  ${media.greaterThan("1024px")`
+    max-width: 476px;
+
+    & > div {
+      transform: scale(0.8);
+      width: 200px;
+      height: 200px;
+    }
+
+    & > div:nth-child(1) {
+      margin: -50px auto 0 auto;
+    }
+    & > div:nth-child(2) {
+      margin-top: -50px;
+      margin-left: -10px;
+    }
+    & > div:nth-child(3) {
+      float: right;
+      margin-top: -200px;
+      margin-right: -10px;
+    }
+    & > div:nth-child(4) {
+      margin-left: 30px;
+      margin-top: -10px;
+    }
+    & > div:nth-child(5) {
+      float: right;
+      margin-top: -200px;
+      margin-right: 30px;
+    }
+
+  `}
+`;
+
 export const Choices = styled.div`
   position: absolute;
   left: 0;

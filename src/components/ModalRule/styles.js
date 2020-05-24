@@ -37,7 +37,7 @@ export const Modal = styled.div`
 
   ${media.greaterThan("1024px")`
     width: 400px;
-    height: 415px;
+    height: 450px;
     margin: auto;
     bottom: 0;
     right: 0;

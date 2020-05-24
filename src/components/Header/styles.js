@@ -25,12 +25,10 @@ export const Header = styled.header`
 `;
 
 export const Logo = styled.img`
-  width: 83px;
   height: 48px;
   margin-left: 23px;
 
   ${media.greaterThan("1024px")`
-    width: 159px;
     height: 96px;
   `}
 `;

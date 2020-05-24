@@ -5,20 +5,31 @@ import Result from "../Result";
 import AppContext from "../../store/AppContext";
 
 import ITriangle from "../../assets/images/bg-triangle.svg";
+import IPentagon from "../../assets/images/bg-pentagon.svg";
 
 import {
   Board,
   OptionsBasic,
   BackgroundLineBasic,
+  OptionsAdvanced,
   Choices,
   Choice,
   Label,
 } from "./styles";
 
 const VALUES_OPTION = {
-  0: "paper",
-  1: "scissor",
-  2: "rock",
+  basic: {
+    0: "paper",
+    1: "scissor",
+    2: "rock",
+  },
+  advanced: {
+    0: "paper",
+    1: "scissor",
+    2: "rock",
+    3: "spock",
+    4: "lizard",
+  },
 };
 
 export default function BoardComponent({ type }) {
@@ -34,7 +45,7 @@ export default function BoardComponent({ type }) {
 
   function handleYouPicked(choice) {
     setYouPicked(choice);
-    const house = VALUES_OPTION[Math.floor(Math.random() * 3)];
+    const house = VALUES_OPTION[type][Math.floor(Math.random() * 3)];
     setHousePicked(house);
 
     const play = jokenpo(choice, house);
@@ -45,7 +56,7 @@ export default function BoardComponent({ type }) {
   }
 
   return (
-    <Board type={type} background={ITriangle}>
+    <Board type={type}>
       {!youPicked && type === "basic" && (
         <>
           <BackgroundLineBasic src={ITriangle} alt={`Background ${type}`} />
@@ -54,6 +65,19 @@ export default function BoardComponent({ type }) {
             <Option type="scissor" onClick={() => handleYouPicked("scissor")} />
             <Option type="rock" onClick={() => handleYouPicked("rock")} />
           </OptionsBasic>
+        </>
+      )}
+
+      {!youPicked && type === "advanced" && (
+        <>
+          <BackgroundLineBasic src={IPentagon} alt={`Background ${type}`} />
+          <OptionsAdvanced type={type}>
+            <Option typeGame="advanced" type="paper" onClick={() => handleYouPicked("paper")} />
+            <Option typeGame="advanced" type="scissor" onClick={() => handleYouPicked("scissor")} />
+            <Option typeGame="advanced" type="rock" onClick={() => handleYouPicked("rock")} />
+            <Option typeGame="advanced" type="spock" onClick={() => handleYouPicked("spock")} />
+            <Option typeGame="advanced" type="lizard" onClick={() => handleYouPicked("lizard")} />
+          </OptionsAdvanced>
         </>
       )}
 
