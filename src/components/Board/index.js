@@ -45,7 +45,7 @@ export default function BoardComponent({ type }) {
 
   function handleYouPicked(choice) {
     setYouPicked(choice);
-    const house = VALUES_OPTION[type][Math.floor(Math.random() * 3)];
+    const house = VALUES_OPTION[type][Math.floor(Math.random() * 4)];
     setHousePicked(house);
 
     const play = jokenpo(choice, house);
