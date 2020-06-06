@@ -45,8 +45,14 @@ export default function BoardComponent({ type }) {
 
   function handleYouPicked(choice) {
     setYouPicked(choice);
-    const house = VALUES_OPTION[type][Math.floor(Math.random() * 4)];
+
+    debugger
+    const house =
+      VALUES_OPTION[type][
+        Math.floor(Math.random() * (Object.keys(VALUES_OPTION[type]).length))
+      ];
     setHousePicked(house);
+    console.log({ choice, house });
 
     const play = jokenpo(choice, house);
     setWinner(play.winner);
@@ -72,11 +78,31 @@ export default function BoardComponent({ type }) {
         <>
           <BackgroundLineBasic src={IPentagon} alt={`Background ${type}`} />
           <OptionsAdvanced type={type}>
-            <Option typeGame="advanced" type="paper" onClick={() => handleYouPicked("paper")} />
-            <Option typeGame="advanced" type="scissor" onClick={() => handleYouPicked("scissor")} />
-            <Option typeGame="advanced" type="rock" onClick={() => handleYouPicked("rock")} />
-            <Option typeGame="advanced" type="spock" onClick={() => handleYouPicked("spock")} />
-            <Option typeGame="advanced" type="lizard" onClick={() => handleYouPicked("lizard")} />
+            <Option
+              typeGame="advanced"
+              type="paper"
+              onClick={() => handleYouPicked("paper")}
+            />
+            <Option
+              typeGame="advanced"
+              type="scissor"
+              onClick={() => handleYouPicked("scissor")}
+            />
+            <Option
+              typeGame="advanced"
+              type="rock"
+              onClick={() => handleYouPicked("rock")}
+            />
+            <Option
+              typeGame="advanced"
+              type="spock"
+              onClick={() => handleYouPicked("spock")}
+            />
+            <Option
+              typeGame="advanced"
+              type="lizard"
+              onClick={() => handleYouPicked("lizard")}
+            />
           </OptionsAdvanced>
         </>
       )}
