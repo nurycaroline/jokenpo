@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/jokenpo/static/js/main.0a0eebd0.chunk.js",
-    "main.js.map": "/jokenpo/static/js/main.0a0eebd0.chunk.js.map",
+    "main.js": "/jokenpo/static/js/main.e1632b2b.chunk.js",
+    "main.js.map": "/jokenpo/static/js/main.e1632b2b.chunk.js.map",
     "runtime-main.js": "/jokenpo/static/js/runtime-main.e6c6e53d.js",
     "runtime-main.js.map": "/jokenpo/static/js/runtime-main.e6c6e53d.js.map",
     "static/js/2.a8ef54b1.chunk.js": "/jokenpo/static/js/2.a8ef54b1.chunk.js",
     "static/js/2.a8ef54b1.chunk.js.map": "/jokenpo/static/js/2.a8ef54b1.chunk.js.map",
     "index.html": "/jokenpo/index.html",
-    "precache-manifest.143754a10096efaf4e29873bfd523386.js": "/jokenpo/precache-manifest.143754a10096efaf4e29873bfd523386.js",
+    "precache-manifest.0de407dc56334fc02751df5d3ee05803.js": "/jokenpo/precache-manifest.0de407dc56334fc02751df5d3ee05803.js",
     "service-worker.js": "/jokenpo/service-worker.js",
     "static/js/2.a8ef54b1.chunk.js.LICENSE.txt": "/jokenpo/static/js/2.a8ef54b1.chunk.js.LICENSE.txt",
     "static/media/bg-pentagon.svg": "/jokenpo/static/media/bg-pentagon.aced7052.svg",
@@ -26,6 +26,6 @@
   "entrypoints": [
     "static/js/runtime-main.e6c6e53d.js",
     "static/js/2.a8ef54b1.chunk.js",
-    "static/js/main.0a0eebd0.chunk.js"
+    "static/js/main.e1632b2b.chunk.js"
   ]
 }

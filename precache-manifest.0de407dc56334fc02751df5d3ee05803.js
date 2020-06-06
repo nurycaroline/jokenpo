@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "81ff76e4c089a1917bc346594b8b3e3d",
+    "revision": "02533fdbb7aaf561baea7ede860098d2",
     "url": "/jokenpo/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jokenpo/static/js/2.a8ef54b1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d3a0f8268fe2c85f59b2",
-    "url": "/jokenpo/static/js/main.0a0eebd0.chunk.js"
+    "revision": "5921a78d9b753cb8a7f6",
+    "url": "/jokenpo/static/js/main.e1632b2b.chunk.js"
   },
   {
     "revision": "8badfebe54ecf938ad75",
